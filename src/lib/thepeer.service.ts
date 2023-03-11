@@ -1,5 +1,6 @@
-import { Injectable, Input } from '@angular/core';
+import { Inject, Injectable, Input } from '@angular/core';
 import { ICheckoutConfig, IDirectChargeConfig, ISendConfig, IThePeer } from './interfaces';
+import { PUBLIC_KEY } from './thepeer-token';
 
 
 declare const window: Window & typeof globalThis & {
@@ -10,6 +11,8 @@ declare const window: Window & typeof globalThis & {
   providedIn: 'root'
 })
 export class ThepeerService {
+
+  constructor(@Inject(PUBLIC_KEY) private publicKey: string){}
 
   private async initializeAPI(): Promise<void>{
     return new Promise(resolve => {
@@ -27,6 +30,8 @@ export class ThepeerService {
 
 
   async initiateSend(config: ISendConfig){
+    if(!config.publicKey) config.publicKey = this.publicKey;
+
     await this.initializeAPI();
     const send = window.ThePeer && window.ThePeer.send(config);
     send.setup();
@@ -34,6 +39,8 @@ export class ThepeerService {
   }
 
   async initiateDirectDebit(config: IDirectChargeConfig){
+    if(!config.publicKey) config.publicKey = this.publicKey;
+
     await this.initializeAPI();
     const directDebit = window.ThePeer && window.ThePeer.directCharge(config);
     directDebit.setup();
@@ -41,6 +48,8 @@ export class ThepeerService {
   }
 
   async initiateCheckout(config: ICheckoutConfig){
+    if(!config.publicKey) config.publicKey = this.publicKey;
+
     await this.initializeAPI();
     const checkout = window.ThePeer && window.ThePeer.checkout(config);
     checkout.setup();

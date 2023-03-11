@@ -10,7 +10,7 @@ interface IBaseConfig {
     /**
      * Public key as shown on the user's dashboard
      */
-    publicKey: string;
+    publicKey?: string;
 
     /**
      * Amount in minor e.g kobo
@@ -25,7 +25,7 @@ interface IBaseConfig {
     /**
      * Metadata
      */
-    meta: {
+    meta?: {
         [key: string]: any
     },
 
