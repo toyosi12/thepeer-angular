@@ -32,7 +32,7 @@ export class AppModule { }
 
 ### Use in your project
 There are two ways to implement this library in your project:
-- You can use functions that can be called from a template within your project like so:
+- You can use functions that can be called from a template within your project as shown below:
 ```ts
 import { ThepeerService } from 'thepeer'
 
@@ -99,7 +99,7 @@ import { IEventResponse } from 'thepeer'
 ```
 NOTE: The PUBLIC_KEY here is optional. If it is provided, it overrides the one in the module. 
 
-| Option        | Description                                                                                                                                                                                 | Required | Data Type |
+| Option        | Description                                                                                                                                                                                 | Required | Type |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|-----------|
 | publicKey     | Your public key can be found on your [dashboard](http://dashboard.thepeer.co). It can either be provided in the module or as part of the config object                                                                   | true     | string    |
 | amount        | This is the amount to be sent and must be in kobo e.g N100 will be 10000                                                                                                                    | true     | integer   |
