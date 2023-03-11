@@ -1,0 +1,24 @@
+{
+  "name": "thepeer",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "author": {
+    "email": "toyosioyelayo@gmail.com",
+    "name": "Oluwatoyosi Oyelayo",
+    "url": "https://github.com/toyosi12"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "keywords": [
+    "angular",
+    "thepeer",
+    "transaction",
+    "payment",
+    "link"
+  ],
+  "sideEffects": false
+}
