@@ -112,8 +112,8 @@ NOTE: The PUBLIC_KEY here is optional. If it is provided, it overrides the one i
 
 
 ## THEPEER API REFERENCES
-[Thepeer API docs](https://docs.thepeer.co) 
-[Thepeer Dashboard](https://dashboard.thepeer.co)
+- [Thepeer API docs](https://docs.thepeer.co) 
+- [Thepeer Dashboard](https://dashboard.thepeer.co)
 
 ## SUPPORT
 Please reach out to me at <toyosioyelayo@gmail.com> if you have any issues
