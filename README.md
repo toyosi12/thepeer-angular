@@ -122,4 +122,4 @@ Please reach out to me at <toyosioyelayo@gmail.com> if you have any issues
 Please feel free to fork this library and contribute by submitting a pull request to enhance the functionalities.
 
 ## License
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](license.md) for more information.
